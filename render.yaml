@@ -9,8 +9,7 @@ services:
     runtime: node
     rootDir: .
     buildCommand: npm ci --include=dev && npm run build:backend
-    startCommand: npm run start:backend
-    preDeployCommand: npm run migrate:backend && npm run seed:backend
+    startCommand: npm run migrate:backend && npm run seed:backend && npm run start:backend
     envVars:
       - key: DATABASE_URL
         fromDatabase:
