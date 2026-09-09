@@ -1,0 +1,13 @@
+{
+  "name": "building-maintenance-management",
+  "private": true,
+  "workspaces": ["backend", "mobile"],
+  "scripts": {
+    "dev:backend": "npm --workspace backend run dev",
+    "test": "npm --workspace backend test",
+    "build:backend": "npm --workspace backend run build",
+    "start:backend": "npm --workspace backend run start",
+    "migrate:backend": "npm --workspace backend run migrate",
+    "seed:backend": "npm --workspace backend run seed"
+  }
+}

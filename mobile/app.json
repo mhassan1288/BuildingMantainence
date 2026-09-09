@@ -1,0 +1,1 @@
+{"expo":{"name":"Building Maintenance","slug":"building-maintenance","version":"1.0.0","scheme":"buildingmaintenance","android":{"package":"com.example.buildingmaintenance"},"ios":{"bundleIdentifier":"com.example.buildingmaintenance"},"plugins":["expo-secure-store"]}}

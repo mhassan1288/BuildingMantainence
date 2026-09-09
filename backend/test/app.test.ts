@@ -1,0 +1,1 @@
+import test from 'node:test'; import assert from 'node:assert/strict'; import {app} from '../src/app'; test('API health',async()=>{const s=app.listen(0);await new Promise<void>(r=>s.once('listening',r));const p=(s.address() as any).port;const x=await fetch(`http://127.0.0.1:${p}/api/health`);assert.equal(x.status,200);s.close()});

@@ -1,0 +1,1 @@
+import {Pool} from 'pg'; import {config} from '../config'; export const pool=new Pool({connectionString:config.databaseUrl||undefined,ssl:config.nodeEnv==='production'?{rejectUnauthorized:false}:undefined});
